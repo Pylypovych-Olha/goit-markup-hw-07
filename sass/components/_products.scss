@@ -1,0 +1,48 @@
+.what-do {
+    padding-bottom: 94px;
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.pictures {
+    margin-right: 30px;
+}
+
+.pictures:nth-child(3n) {
+    margin-right: 0;
+}
+
+.pictures-text {
+    position: relative;
+}
+
+.pictures-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
+    margin: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+}
