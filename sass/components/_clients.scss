@@ -1,23 +1,21 @@
 .section-title {
-    color: var(--title-color);
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  color: var(--title-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-.clients-list {
+  &-list {
     display: flex;
-}
-
-.clients-link {
+  }
+  &-link {
     display: flex;
     outline: transparent;
     justify-content: center;
@@ -27,35 +25,29 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.clients-link:hover {
-    border: 1px solid var(--active-link-color);
-    border-radius: 4px;
-}
+    &:hover,
+    &:focus {
+      border: 1px solid var(--active-link-color);
+      border-radius: 4px;
+    }
+  }
 
-.clients-link:focus {
-    border: 1px solid var(--active-link-color);
-    border-radius: 4px;
-}
-
-.clients-item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-right: 30px;
-}
+  }
 
-.clients-logo {
+  &-logo {
     width: 106px;
     height: 60px;
     fill: #afb1b8;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-list .clients-link:hover .clients-logo {
-    fill: var(--active-link-color);
-}
-
-.clients-list .clients-link:focus .clients-logo {
-    fill: var(--active-link-color);
+    .clients-list .clients-link:hover &,
+    .clients-list .clients-link:focus & {
+      fill: var(--active-link-color);
+    }
+  }
 }
